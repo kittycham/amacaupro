@@ -12,7 +12,6 @@ module.exports = {
     title: `Gordon Chou Accountant`,
     description: `Gordon Chou Accountant`,
     author: `@Bottle Technology Limited`,
-    siteUrl: `https://www.amacaupro.com`,
   },
   plugins: [
     `gatsby-plugin-postcss`,
