@@ -42,7 +42,7 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        url: `http://wp.amacaupro.com/wordpress_host/graphql`,
+        url: `http://wp.amacaupro.com/graphql`,
         includedRoutes: [
           "**/categories",
           "**/posts",
