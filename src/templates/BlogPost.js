@@ -4,7 +4,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PostSideBar from "../components/postsidebar"
 import Container from "../components/container"
-import Hero from "../components/hero"
 
 const BlogPostTemplate = ({ data }) => (
   <Layout>

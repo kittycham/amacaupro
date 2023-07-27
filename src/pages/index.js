@@ -1,8 +1,6 @@
 import * as React from "react";
-import { graphql, useStaticQuery, Link } from 'gatsby';
 import Seo from "../components/seo";
 import Layout from "../components/layout";
-import Hero from "../components/hero";
 import Container from "../components/container";
 import MainContainer from "../components/mainContainer";
 import Image1 from "../images/image1.png";
@@ -16,7 +14,6 @@ import IPIM from "../images/IPIM.jpg";
 import { useLatestPostQuery } from "../hooks/useLatestPostQuery";
 
 const IndexPage = () => {
-  const images = ["slider1.jpg", "slider2.png"];
 
   const {allWpPost} = useLatestPostQuery()
 

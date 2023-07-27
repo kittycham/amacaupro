@@ -6,6 +6,8 @@ const PostSideBar = ({className}) => {
     const {allWpPost, allWpCategory} = useLatestPostQuery();
     const posts = [...allWpPost.nodes].splice(0,10)
 
+    console.log(allWpCategory)
+
     return (
         <div className={`h-full w-full lg:w-72 lg:pr-10 lg:border-r-2 lg:mr-20 pb-10 lg:pb-0 border-b-2 lg:border-b-0 z-1 ${className}`}>
             <ul>
@@ -14,7 +16,7 @@ const PostSideBar = ({className}) => {
                     {allWpCategory.nodes.length !== 0 && (
                     <ul className="ml-4 text-sm">
                         {allWpCategory.nodes.map((category) => (
-                        <li key={category.id}>
+                        category.contentNodes.nodes.length > 0 && <li key={category.id}>
                             <Link
                             to={`/${category.name}`}
                             className="text-gray-500 flex hover:text-sky-500 mb-2.5"

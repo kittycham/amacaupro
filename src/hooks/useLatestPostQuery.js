@@ -26,11 +26,17 @@ export const useLatestPostQuery = () => {
             }
             }
             allWpCategory {
-            nodes {
-                id
-                name
-            }
-            }
+                nodes {
+                  id
+                  name
+                  contentNodes {
+                    nodes {
+                      id
+                      slug
+                    }
+                  }
+                }
+              }
         }
     `)
     return data;

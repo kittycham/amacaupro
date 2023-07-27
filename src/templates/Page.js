@@ -4,7 +4,6 @@ import Layout from "../components/layout.js"
 import SEO from "../components/seo"
 import Container from "../components/container.js"
 import Sidebar from "../components/sidebar.js"
-import Hero from "../components/hero.js"
 
 const PageTemplate = ({ data }) => {
 

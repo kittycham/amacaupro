@@ -11,7 +11,7 @@ module.exports = {
   siteMetadata: {
     title: `Gordon Chou Accountant`,
     description: `Gordon Chou Accountant`,
-    author: `@Bottle Tech.`,
+    author: `@Bottle Technology Limited`,
     siteUrl: `https://www.amacaupro.com`,
   },
   plugins: [
@@ -43,7 +43,7 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        url: `http://amacaupro3.local/graphql`,
+        url: `http://wp.amacaupro.com/wordpress_host/graphql`,
         includedRoutes: [
           "**/categories",
           "**/posts",

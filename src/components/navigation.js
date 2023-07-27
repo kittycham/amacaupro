@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
-import Container from "./container";
 
 const Navigation = ({ menu }) => {
   const filteredMenu = menu.filter(mainItem => !mainItem.parentId);

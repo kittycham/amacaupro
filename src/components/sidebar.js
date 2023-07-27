@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "gatsby";
 import { useMenuQuery } from "../hooks/useMenuQuery";
 
@@ -7,7 +7,7 @@ const Sidebar = ({ className }) => {
   const filteredMenu = allWpPage.nodes.filter(mainItem => !mainItem.parentId);
 
   return (
-    <div className={`block z-1 h-full w-full lg:w-80 lg:border-r-2 lg:pr-16 lg:mr-20 pb-10 lg:pb-0 border-b-2 lg:border-b-0 ${className}`}>
+    <div className={`block z-1 h-full w-full lg:w-60 lg:border-r-2 lg:pr-16 lg:mr-20 pb-10 lg:pb-0 border-b-2 lg:border-b-0 ${className}`}>
       <ul>
         {filteredMenu.map((mainItem) => (
           <li
